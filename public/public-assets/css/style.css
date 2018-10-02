@@ -1,0 +1,2341 @@
+@charset "UTF-8";
+@import url(../"css/homepage-two.css");
+
+/*
+01. Theme Typo
+02. Header
+	02.1 Top Strip
+		02.1.1 Top Info
+		02.1.2 Search
+	02.1 Logo
+	02.2 Navigation
+		02.2.1 SubMenu
+		02.2.1 MegaMenu
+03. Content
+
+	03.1 Blog
+		03.1.2 Blog Grid
+		03.1.3 Blog Grid Two
+		03.1.4 Blog Medium
+		03.1.5 Blog Detail
+	
+	03.4 Team
+		03.4.1 Team Grid
+		03.4.2 Team list
+		03.4.3 Team Detail
+
+	03.5 Shortcode
+		03.5.1 Accordian
+		03.5.2 Testimonial
+		03.5.3 Services
+		03.5.4 Team
+		03.5.5 Form
+		03.5.6 Tabs
+		03.5.7 Partner
+		03.5.8 Button
+		03.5.9 Accordian
+		03.5.10 List
+		03.5.11 Table
+		03.5.12 Typography
+ 
+	03.6 Default Pages Style
+		03.6.1 404
+		03.6.2 UnderCuntruction
+		03.6.3 No Search Result
+		03.6.4 Services
+		03.6.5 Contact Us
+
+	03.7 Case Studies
+		03.7.1 Case Studies Grid
+		03.7.2 Case Studies Grid Two
+		03.7.3 Case Studies List
+		03.7.4 Case Studies Detail
+
+	03.8 Careers
+		03.8.1 Careers Job Listing
+		03.8.2 Careers Vacancy
+		03.8.3 Company History
+		03.8.4 Our Clients
+		03.8.5 Our Strategy
+
+	03.9 Shop
+		03.9.1 Shop Grid
+		03.9.2 Shop List
+		03.9.3 Shop Detail
+ 
+04. Sidebar Widget
+	04.1 Widget CATEGORY WIDGET
+	04.2 Widget Search
+	04.3 Widget Our Photos
+	04.4 Widget Text
+	04.5 Widget Recent Posts
+	04.7 Widget Newsletter
+	04.8 Testimonial
+	04.9 Popular Tags
+	04.10 Featured Articles
+	04.11 Widget Calendar
+ 
+05. Footer
+	05.1 backTo Top
+	05.2 CopyRight
+	05.3 Social Network
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+    color: #999999;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #333333;
+    font-family: 'Varela Round', sans-serif;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
+    margin: 0 0 8px;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 16px;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: #333333;
+}
+p a {
+    color: #333333;
+}
+p {
+    line-height: 28px;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+}
+a {
+    color: #333333;
+    text-decoration: none;
+}
+a:hover, a:focus, a:active {
+    outline: none;
+}
+ul {
+    margin-bottom: 0;
+}
+figure {
+    margin-bottom: 6px;
+    position: relative;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+strong {
+    color: #333333;
+}
+iframe {
+    border: none;
+    float: left;
+    width: 100%;
+}
+.wp-caption.alignleft, .wp-caption.alignnone {
+    width: 100%;
+}
+select {
+    background-color: #f0eef0;
+    border: 1px solid #dfdfdf;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+}
+label {
+    color: #333333;
+    display: block;
+    margin-bottom: 10px;
+}
+button {
+    border: none;
+}
+textarea, input[type="date"], input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    background-color: #f2f2f2;
+    border: none;
+    color: #666;
+    display: inline-block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 20px;
+    outline: none;
+    padding: 4px 6px;
+    vertical-align: middle;
+    box-shadow: none;
+    width: 100%;
+}
+input[type="submit"] {
+    outline: none;
+}
+option {
+    padding: 5px 15px;
+}
+li {
+    line-height: 28px;
+    list-style: inside none disc;
+}
+ul ul {
+    margin-left: 20px;
+}
+ol {
+    float: none;
+    list-style: outside none decimal;
+    padding-left: 15px;
+}
+ol ol {
+    margin-left: 20px;
+}
+ol li {
+    list-style: outside none decimal;
+    width: 100%;
+}
+table {
+    background-color: transparent;
+    max-width: 100%;
+}
+th {
+    text-align: left;
+}
+table {
+    margin-bottom: 15px;
+    width: 100%;
+}
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+    border: 1px solid #dddddd;
+    line-height: 2.5;
+    padding-left: 3px;
+    text-align: center;
+    vertical-align: top;
+}
+table thead tr th {
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    text-transform: capitalize;
+}
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 1px solid #dddddd;
+}
+table > thead > tr > th {
+    border-bottom: 2px solid #dddddd;
+    vertical-align: bottom;
+}
+table > caption + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th, table > thead:first-child > tr:first-child > th, table > caption + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+    border-bottom: 0 none;
+}
+table > tbody + tbody {
+    border-top: 2px solid #dddddd;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    padding: 6px 10px;
+}
+p ins {
+    color: #999;
+}
+dl dd                           { margin-left: 20px; }
+address                         { font-style: italic; }
+.careerfy-right                { float: right; }
+.careerfy-main-section         { position: relative; }
+.careerfy-main-content         { padding: 50px 0px 10px 0px; }
+.careerfy-main-content,.careerfy-main-section {
+    float: left;
+    width: 100%;
+}
+/* Header */
+#careerfy-header,.careerfy-header-one {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(223,223,223,0.20);
+}
+.careerfy-header-one {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dfdfdf;
+}
+.careerfy-logo {
+    float: left;
+    margin: 10px 0px 10px 0px;
+}
+a.careerfy-logo img {
+    width: 80% !important;
+}
+/* Navigation */
+.navbar-nav li {
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.careerfy-navigation {
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav > li                                    { padding: 0px 17px; }
+.navbar-nav .sub-menu > li:last-child > a           { border: none; }
+.navbar-nav > li > a {
+    font-size: 17px;
+    float: left;
+    color: #fff;
+    padding: 35px 0px 34px 0px;
+    position: relative;
+    -webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+    color: #fff !important;
+}
+.navbar-nav > li > a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.navbar-nav > li:hover > a:before,
+.navbar-nav > li.active > a:before {
+    opacity: 1;
+    bottom: -1px;
+}
+.navbar-nav li:hover > .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0px);
+       -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+         -o-transform: translateX(0px);
+            transform: translateX(0px);
+}
+.navbar-nav .sub-menu {
+    background-color: #ffffff;
+    left: 0;
+    margin: -10px 0px 0px 0px;
+    padding: 0px 20px;
+    opacity: 0;
+    position: absolute;
+    top: 110%;
+    visibility: hidden;
+    width: 200px;
+    z-index: 999;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.20);
+    -webkit-transform: translateX(10px);
+       -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+         -o-transform: translateX(10px);
+            transform: translateX(10px);
+    -webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+.navbar-nav .sub-menu .sub-menu {
+    left: 100%;
+    top: 20%;
+}
+.navbar-nav .sub-menu > li {
+    float: left;
+    width: 100%;
+}
+.navbar-nav .sub-menu li a {
+    border-bottom: 1px solid #f2f2f2;
+    color: #656c6c;
+    float: left;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 0px;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+}
+.navbar-collapse.collapse { display: block; }
+/* User Section */
+.careerfy-user-section {
+    float: left;
+    padding: 25px 0px 0px;
+}
+
+.careerfy-user-section li{
+    float: left;
+    list-style: none;
+    line-height: 1;
+    margin: 0px 0px 0px 8px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.careerfy-user-section li a {
+    float: left;
+    padding: 10px 20px;
+    color: #ffffff;
+    border: 2px solid #4cb5ff;
+    border-radius: 40px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.menu-bg {
+    background: #0a4f87;
+    box-shadow: 0px 0px 3px rgba(0,0,0, .8);
+}
+/*.careerfy-user-section li:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 1px;
+    height: 20px;
+    background-color: #e5e5e5;
+}*/
+.careerfy-user-section li:first-child:before   { display: none; }
+.careerfy-simple-btn {
+    float: right;
+    padding: 9px 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 2px;
+    margin: 24px 0px 0px 15px;
+    overflow: hidden;
+    position: relative;
+}
+.careerfy-simple-btn i                         { margin-right: 9px; }
+/* Counter */
+.careerfy-counter {
+    float: left;
+    width: 100%;
+}
+.careerfy-counter ul li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 27px;
+    border-left: 1px solid #e9e9e9;
+}
+.careerfy-counter ul li:first-child            { border: none; }
+.careerfy-counter ul li small                  { font-size: 14px; }
+.word-counter {
+    display: block;
+    color: #313131;
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+/* Banner */
+.careerfy-banner {
+    float: left;
+    width: 100%;
+    background: url(../extra-images/banner-bg.jpg);
+    position: relative;
+    padding: 200px 0px 139px 0px;
+    min-height: 87vh;
+    background-size: cover;
+    background-position: center;
+
+}
+/*.careerfy-banner-transparent {
+    background-color: #1e3142;
+    opacity: 0.76;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}*/
+
+.careerfy-banner-search input{
+    position: relative;
+    padding: 14px;
+    height: 44px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 2px 2px rgba(187, 184, 184, 0.5);
+
+}
+/* Banner Caption */
+.careerfy-banner-caption {
+    float: left;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.careerfy-banner-caption .container{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.careerfy-banner-caption h1 {
+    margin-bottom: 17px;
+    font-size: 45px;
+    color: #ffffff;
+    font-weight: 200;
+    line-height: 1.2;
+}
+.careerfy-banner-caption p {
+    display: inline-block;
+    width: 60%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 48px;
+}
+/* Banner Search */
+.careerfy-banner-search {
+    margin-bottom: 33px;
+        margin-right: 55px;
+}
+.careerfy-banner-search ul,
+.careerfy-banner-search input[type="text"],
+.careerfy-select-style select {
+    width: 60%;
+}
+.careerfy-banner-search input[type="text"]{
+    position: relative;
+}
+
+.careerfy-banner-search button{
+    height: 44px;
+    background: #13b5ea;
+    color: #fff;
+    padding: 0px 20px;
+    line-height: 24px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 2px 2px rgba(187, 184, 184, 0.5);
+    position: absolute;
+}
+
+/*.careerfy-banner-search ul li:last-child { width: 6%; }
+.careerfy-banner-search input[type="text"] {
+    background-color: #ffffff;
+    height: 60px;
+    border: 1px solid #f2f2f2;
+    border-left: none;
+    font-size: 12px;
+    color: #666666;
+    padding: 8px 18px;
+}
+.careerfy-banner-search ul li i {
+    position: absolute;
+    right: 19px;
+    top: 21px;
+    color: #999999;
+    font-size: 16px;
+}*/
+
+
+/* Fancy Title */
+.careerfy-fancy-title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.careerfy-fancy-title h2 {
+    margin-bottom: 3px;
+    text-transform: uppercase;
+}
+.careerfy-fancy-title p {
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+/* Parallex Text */
+.careerfy-parallex-text {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 45px 0px 0px 0px;
+}
+.careerfy-parallex-text h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.careerfy-parallex-text p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.careerfy-parallex-text ul {
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+.careerfy-static-btn {
+    display: inline-block;
+    background-color: #0a4f87;
+    padding: 17px 30px;
+    line-height: 1;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+}
+.careerfy-static-btn span,
+.careerfy-simple-btn span {
+    z-index: 2;
+    position: relative;
+}
+.careerfy-static-btn:after,.careerfy-static-btn:after,
+.careerfy-simple-btn:after,.careerfy-simple-btn:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.30;
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    z-index: 0;
+    -webkit-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+     -moz-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      -ms-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+       -o-transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transform: rotate(35deg);
+     -moz-transform: rotate(35deg);
+      -ms-transform: rotate(35deg);
+       -o-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+.careerfy-static-btn:hover:after,
+.careerfy-simple-btn:hover:after {
+    left: 120%; }
+/* Testimonial Slider */
+.careerfy-testimonial-section {
+    float: left;
+    width: 100%;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.careerfy-testimonial-slider {
+    float: left;
+    width: 60%;
+    padding: 0px 0px 0px 108px;
+    position: relative;
+    margin-top: 90px;
+}
+.careerfy-testimonial-wrap p {
+    font-size: 30px;
+    color: #333333;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 23px;
+    position: relative;
+}
+.careerfy-testimonial-slider:before {
+    content: "\e957";
+    font-family: icomoon;
+    position: absolute;
+    left: 65px;
+    top: 12px;
+    color: #d1d1d1;
+    font-size: 29px;
+}
+.careerfy-testimonial-wrap p:after {
+    content: "\e957";
+    font-family: icomoon;
+    display: inline-block;
+    color: #d1d1d1;
+    font-size: 29px;
+    margin-left: 15px;
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+.careerfy-testimonial-text {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 19px;
+}
+.careerfy-testimonial-text h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.careerfy-testimonial-slider .slick-arrow {
+    position: absolute;
+    right: 0px;
+    bottom: 14px;
+    z-index: 999;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #999999;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    font-size: 11px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-testimonial-slider .slick-arrow:hover { color: #ffffff; }
+.careerfy-testimonial-slider .slick-arrow.slick-arrow-left {
+    right: 36px;
+    line-height: 20px;
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+/* Blog */
+.careerfy-blog {
+    float: left;
+    width: 100%;
+}
+.careerfy-blog ul li               { list-style: none; }
+.careerfy-blog > ul > li           { margin-bottom: 30px; }
+/* Blog Grid */
+.careerfy-blog-grid figure,.careerfy-blog-grid-text,
+.careerfy-blog-grid figure a,.careerfy-blog-grid figure img,
+.careerfy-blog-tag,.careerfy-blog-grid-option,.careerfy-read-more {
+    float: left;
+    width: 100%;
+}
+.careerfy-blog-grid figure { margin-bottom: 0px; }
+.careerfy-blog-grid-text {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
+    padding: 15px 30px 30px 30px;
+}
+.careerfy-blog-tag a {
+    font-size: 12px;
+    color: #e12335;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.careerfy-blog-grid-text h2 {
+    font-size: 18px;
+    margin-bottom: 3px;
+    line-height: 23px;
+}
+.careerfy-blog-grid-option {
+    margin: 0px 0px 8px 0px;
+}
+.careerfy-blog-grid-option li {
+    float: left;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 4px 8px 0px 8px;
+    position: relative;
+}
+.careerfy-blog-grid-option li:first-child { padding-left: 0px; }
+.careerfy-blog-grid-option li:first-child:before { display: none; }
+.careerfy-blog-grid-option li:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 13px;
+    width: 1px;
+    height: 11px;
+    background-color: #c9c9c9;
+}
+.careerfy-blog-grid-text p {
+    line-height: 22px;
+    margin-bottom: 23px;
+    font-weight: 300;
+}
+.careerfy-read-more {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    padding: 17px 0px 17px 0px;
+    line-height: 1;
+    border-radius: 3px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+li:hover .careerfy-read-more { background-color: transparent; }
+.careerfy-logo-thumb {
+    float: right;
+    padding-top: 50px;
+}
+.careerfy-parallex-text.careerfy-logo-text p { font-size: 14px; }
+/* SubHeader */
+.careerfy-subheader {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: url(../extra-images/subheader-bg.jpg);
+    background-color: #1e3142;
+    position: relative;
+    padding: 45px 0px 87px 0px;
+}
+.careerfy-subheader.careerfy-subheader-without-bg {
+    background-image: none;
+    padding-bottom: 0px;
+}
+.careerfy-subheader-without-bg .careerfy-page-title { padding: 33px 0px 88px 0px; }
+.careerfy-page-title h1 {
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.careerfy-page-title p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.careerfy-breadcrumb {
+    float: left;
+    width: 100%;
+    background-color: #121d28;
+    text-align: center;
+    padding: 11px 0px 1px 0px;
+}
+.careerfy-breadcrumb ul {
+    display: inline-block;
+}
+.careerfy-breadcrumb ul li {
+    float: left;
+    list-style: none;
+    padding: 0px 17px;
+    position: relative;
+    color: #ffffff;
+}
+.careerfy-breadcrumb ul li:before {
+    content: "\eb60";
+    font-family: icomoon;
+    position: absolute;
+    left: -2px;
+    top: 1px;
+    color: #ffffff;
+    font-size: 9px;
+}
+.careerfy-breadcrumb ul li:first-child:before { display: none; }
+.careerfy-breadcrumb ul li a {
+    color: #ffffff;
+}
+.careerfy-subheader.careerfy-subheader-with-bg { padding-bottom: 0px; }
+.careerfy-subheader-with-bg .careerfy-page-title { padding: 20px 0px 66px 0px; }
+/* About Text */
+.careerfy-about-text,.careerfy-about-text span,
+.careerfy-about-thumb {
+    float: left;
+    width: 100%;
+}
+.careerfy-about-text { margin-bottom: 70px; }
+.careerfy-about-thumb { margin-bottom: 66px; }
+.careerfy-about-text h2 {
+    margin-bottom: 10px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.careerfy-about-text .careerfy-about-sub {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 19px;
+}
+.careerfy-about-text p {
+    margin-bottom: 17px;
+}
+.careerfy-about-text .careerfy-static-btn { margin-top: 14px; }
+/* Modren Counter */
+.careerfy-modren-counter {
+    float: left;
+    width: 100%;
+}
+.careerfy-modren-counter ul li {
+    list-style: none;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+.careerfy-modren-counter ul li:nth-child(3n):before { display: none; }
+.careerfy-modren-counter ul li:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    border-bottom: 2px dashed #e9e9e9;
+    width: 100%;
+    height: 2px;
+}
+.careerfy-modren-counter ul li:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    background-color: #31beed;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 3px solid #dcf4fc;
+    box-shadow: 0px 0px 0px 3px #aae4f7 inset;
+    margin-left: -10px;
+}
+.careerfy-modren-counter i {
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 28px;
+}
+.careerfy-modren-counter span {
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.careerfy-modren-counter small {
+    font-size: 13px;
+    color: #999999;
+}
+/* Classic Services */
+.careerfy-classic-services {
+    float: left;
+    width: 100%;
+}
+.careerfy-classic-services ul li {
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.careerfy-classic-services i {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    color: #0bc2f0;
+    border-radius: 100%;
+    border: 2px dashed #0bc2f0;
+    font-size: 66px;
+    padding-top: 36px;
+    margin-bottom: 27px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-classic-services ul li:hover i {
+    background-color: #13b5ea;
+    color: #ffffff;
+}
+.careerfy-classic-services span {
+    font-size: 150px;
+    color: #f0f0f0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 0.7;
+    font-weight: 500;
+}
+.careerfy-classic-services h2 {
+    font-size: 20px;
+    margin-bottom: 19px;
+    line-height: 1;
+}
+.careerfy-classic-services p {
+    font-size: 16px;
+    display: inline-block;
+    width: 80%;
+}
+/* Service Slider */
+.careerfy-service-slider,.careerfy-service-slider-layer a,
+.careerfy-service-slider-layer a img {
+    float: left;
+    width: 100%;
+}
+.careerfy-service-slider {
+    position: relative;
+    padding-bottom: 58px;
+    margin-bottom: 38px;
+    height: 626px;
+}
+.careerfy-service-slider-layer {
+    text-align: center;
+    padding: 0px 5px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-service-slider .slick-track { padding: 50px 0px; }
+.careerfy-service-slider-layer a {
+    position: relative;
+    margin-bottom: 23px;
+}
+.careerfy-service-slider a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.50);
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-service-slider span {
+    font-size: 16px;
+    color: #333333;
+}
+.careerfy-service-slider small {
+    font-size: 12px;
+    color: #666666;
+}
+.careerfy-service-slider .slick-current.slick-active { width: 460px !important; margin-top: -50px; }
+.careerfy-service-slider .slick-current a:before { opacity: 0; }
+.careerfy-service-slider-layer:last-child { display: none; }
+.careerfy-service-slider .slick-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 49px;
+    height: 49px;
+    background-color: #a0aab6;
+    font-size: 17px;
+    color: #ffffff;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 13px;
+    margin-left: -49px;
+    z-index: 99;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-service-slider .slick-arrow-left.slick-arrow { padding-top: 12px }
+.careerfy-service-slider .slick-arrow-left.slick-arrow:before {
+    content: '';
+    position: absolute;
+    right: 49px;
+    top: 24px;
+    width: 115px;
+    height: 1px;
+    background-color: #e9e9e9;
+}
+.careerfy-service-slider .slick-arrow-right.slick-arrow:before {
+    content: '';
+    position: absolute;
+    left: 49px;
+    top: 24px;
+    width: 115px;
+    height: 1px;
+    background-color: #e9e9e9;
+}
+.careerfy-service-slider .slick-arrow-left.slick-arrow i {
+    display: inline-block;
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+.careerfy-service-slider .slick-arrow-right.slick-arrow {
+    left: auto;
+    right: 50%;
+    margin-right: -69px;
+    margin-left: 0px;
+}
+.careerfy-service-slider .slick-arrow:hover {
+    background-color: #13b5ea;
+    color: #ffffff;
+}
+/* Services Classic */
+.careerfy-services-classic {
+    float: left;
+    width: 100%;
+    margin-bottom: 22px;
+}
+.careerfy-services-classic ul li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.careerfy-services-classic ul li:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #d4e0ee;
+}
+.careerfy-services-classic ul li:nth-child(4n):before,
+.careerfy-services-classic ul li:first-child:before {
+    left: 50%;
+    width: 49%;
+}
+.careerfy-services-classic ul li:nth-child(3n):before {
+    width: 49%;
+}
+.careerfy-services-classic span {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px dashed #d7e2ee;
+    border-radius: 100%;
+    padding-top: 13px;
+    margin-bottom: 39px;
+    position: relative;
+    background-color: #ffffff;
+}
+.careerfy-services-classic span i {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    font-size: 48px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    color: #13b5ea;
+    padding-top: 36px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-services-classic li:hover span i {
+    background-color: #13b5ea;
+    color: #ffffff;
+}
+.careerfy-services-classic h2 {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+.careerfy-services-classic p {
+    letter-spacing: 0px;
+    display: inline-block;
+    width: 80%;
+    line-height: 24px;
+}
+/* Search Widget */
+.careerfy-search-form-widget,.careerfy-search-form-widget form,
+.careerfy-search-form-widget form input[type="text"] {
+    float: left;
+    width: 100%;
+}
+.careerfy-search-form-widget form {
+    position: relative;
+}
+.careerfy-search-form-widget form label {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.careerfy-search-form-widget form input[type="text"] {
+    background-color: #f3f3f3;
+    height: 41px;
+    font-size: 15px;
+    color: #9c9c9c;
+    padding: 6px 20px;
+}
+.careerfy-search-form-widget form input[type="submit"] {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 41px;
+    height: 41px;
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+}
+.careerfy-search-form-widget form i {
+    color: #aaaaaa;
+    position: absolute;
+    right: 20px;
+    bottom: 13px;
+    font-size: 15px;
+    z-index: 1;
+}
+.widget .careerfy-slash-title {
+    float: left;
+    width: 100%;
+    font-size: 18px;
+    color: #242634;
+    line-height: 1;
+    margin-bottom: 0px;
+    border-bottom: 2px solid #f3f3f3;
+    padding-bottom: 9px;
+    margin-bottom: 18px;
+}
+.widget-text-info p {
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.careerfy-text-btn {
+    display: inline-block;
+    padding: 14px 18px;
+    line-height: 1;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+/* Widget Faq */
+.widget_faq ul,.widget_faq ul li {
+    float: left;
+    width: 100%;
+}
+.widget_faq ul li {
+    list-style: none;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.widget_faq ul li a {
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.widget_faq h2 { position: relative; }
+.widget_faq h2:before {
+    content: "\f107";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    color: #909090;
+    font-size: 15px;
+}
+/* Faq Accordion */
+.careerfy-accordion {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.careerfy-accordion .panel {
+    border: none;
+}
+.careerfy-accordion .panel-body {
+    padding: 0px 0px 16px 0px;
+}
+.careerfy-accordion .panel-heading {
+    padding: 0px 0px 15px 0px;
+}
+.careerfy-accordion .panel-default > .panel-heading {
+    background-color: transparent;
+}
+.careerfy-accordion .panel-heading a.collapsed {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #242634;
+}
+.careerfy-accordion .panel-heading a {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #13b5ea;
+}
+.careerfy-accordion .panel-heading a i {
+    float: left;
+    color: #13b5ea;
+    font-size: 20px;
+    margin: 2px 12px 0px 0px;
+    -webkit-transform: rotate(-90deg);
+       -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+         -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+.careerfy-accordion .panel-heading a.collapsed i {
+    float: left;
+    color: #cccccc;
+    font-size: 20px;
+    margin: 3px 12px 0px 0px;
+    -webkit-transform: scale(-1);
+       -moz-transform: scale(-1);
+        -ms-transform: scale(-1);
+         -o-transform: scale(-1);
+            transform: scale(-1);
+}
+/* Classic PricePlane */
+.careerfy-classic-priceplane,.careerfy-priceplane-section,
+.careerfy-classic-priceplane h2,.careerfy-classic-priceplane-title,
+.grab-classic-priceplane,.grab-classic-priceplane ul,
+.grab-classic-priceplane ul li,.careerfy-classic-priceplane-btn {
+    float: left;
+    width: 100%;
+}
+.careerfy-classic-priceplane {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.careerfy-classic-priceplane h2 {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 8px;
+    text-align: center;
+    padding: 0px 15px;
+}
+.careerfy-classic-priceplane-title {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 22px;
+}
+.careerfy-priceplane-section {
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 13px 16px 14px 26px;
+}
+.careerfy-priceplane-section span {
+    float: left;
+    color: #333333;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.careerfy-priceplane-section span small {
+    font-size: 10px;
+    color: #666666;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 300;
+}
+.careerfy-priceplane-section span ~ p { padding-left: 70px; }
+.careerfy-priceplane-section p {
+    font-size: 12px;
+    color: #999999;
+    line-height: 22px;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+}
+.grab-classic-priceplane { padding: 29px 30px 0px 30px; }
+.grab-classic-priceplane ul li.active { color: #333; }
+.grab-classic-priceplane ul li {
+    list-style: none;
+    line-height: 1;
+    color: #999999;
+    margin-bottom: 24px;
+}
+.grab-classic-priceplane ul li i {
+    float: left;
+    padding: 0px 9px 0px 0px;
+    font-size: 12px;
+    color: #bfbfbf;
+}
+.careerfy-classic-priceplane-btn {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    border-radius: 3px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+.careerfy-classic-priceplane.active { background-color: #13b5ea; }
+.careerfy-classic-priceplane.active h2,
+.careerfy-classic-priceplane.active span,
+.careerfy-classic-priceplane.active small,
+.careerfy-classic-priceplane.active p,
+.careerfy-classic-priceplane.active .grab-classic-priceplane ul li,
+.careerfy-classic-priceplane.active .grab-classic-priceplane ul li i {
+    color: #ffffff;
+}
+.careerfy-classic-priceplane.active .careerfy-priceplane-section { border-color: rgba(0,0,0,0.10); }
+.careerfy-classic-priceplane.active .careerfy-classic-priceplane-btn { background-color: #fff; color: #13b5ea; }
+/* Simple Price Plane */
+.col-md-3.careerfy-simple-priceplane { padding: 0px; }
+.careerfy-simple-priceplane-basic,
+.careerfy-simple-priceplane-wrap,
+.careerfy-simple-priceplane ul,
+.careerfy-simple-priceplane ul li,
+.careerfy-simple-priceplane-active {
+    float: left;
+    width: 100%;
+}
+.careerfy-simple-priceplane {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    position: relative;
+    z-index: 2;
+}
+.careerfy-simple-priceplane.active { z-index: 5; }
+.careerfy-simple-priceplane-wrap {
+    border: 1px solid #e6e6e6;
+    border-right: none;
+}
+.col-md-3.careerfy-simple-priceplane:last-child .careerfy-simple-priceplane-wrap {
+    border-right: 1px solid #e6e6e6;
+}
+.careerfy-simple-priceplane-basic {
+    text-align: center;
+    padding: 21px 0px 25px 0px;
+}
+.careerfy-simple-priceplane-basic h2 {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.careerfy-simple-priceplane-basic span {
+    display: block;
+    font-size: 34px;
+    color: #333333;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 21px;
+}
+.careerfy-simple-priceplane-basic span small {
+    font-size: 10px;
+    color: #666666;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.careerfy-simple-priceplane-basic a {
+    display: inline-block;
+    padding: 13px 30px;
+    line-height: 1;
+    border: 2px solid #e6e6e6;
+    border-radius: 40px;
+    color: #333333;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.active .careerfy-simple-priceplane-basic a {
+    color: #ffffff;
+}
+.careerfy-simple-priceplane ul {
+    background-color: #f9f9f9;
+    padding: 28px 0px 4px 0px;
+}
+.careerfy-simple-priceplane ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+.careerfy-simple-priceplane-active {
+    background-color: #1e3142;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 10px;
+    line-height: 1;
+    margin-bottom: 18px;
+}
+.active .careerfy-simple-priceplane-wrap,.careerfy-simple-priceplane-active { border-radius: 4px 4px 0px 0px; }
+.careerfy-simple-priceplane.active { margin-top: 0px; }
+.active .careerfy-simple-priceplane-wrap {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+    border: none;
+    background-color: #ffffff;
+    -webkit-transform: scale(1.05);
+       -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+         -o-transform: scale(1.05);
+            transform: scale(1.05);
+}
+.active.careerfy-simple-priceplane ul { padding-bottom: 21px; }
+/* Plain Services */
+.careerfy-plain-services {
+    float: left;
+    width: 100%;
+}
+.careerfy-plain-services ul li { list-style: none; }
+.careerfy-plain-services > ul > li { margin-bottom: 40px; }
+.careerfy-plain-services i {
+    font-size: 47px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.careerfy-plain-services h2 {
+    margin-bottom: 15px;
+    line-height: 1;
+    color: #333333;
+    font-size: 20px;
+}
+.careerfy-plain-services p {
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+}
+/* Packages PricePlane */
+.careerfy-packages-priceplane {
+    float: left;
+    width: 100%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    padding: 22px 0px 30px 0px;
+}
+.careerfy-packages-priceplane.active {
+    margin-top: 15px;
+    padding-bottom: 40px;
+    -webkit-transform: scale(1.07);
+       -moz-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+         -o-transform: scale(1.07);
+            transform: scale(1.07);
+}
+.careerfy-packages-priceplane h2 {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+}
+.packages-priceplane-price {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 15px 0px 12px 0px;
+}
+.packages-priceplane-price strong {
+    display: block;
+    color: #333333;
+    font-size: 40px;
+    margin-bottom: 4px;
+}
+.packages-priceplane-price strong small {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: super;
+    font-weight: 400;
+    margin-right: 4px;
+}
+.packages-priceplane-price span {
+    font-size: 10px;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.careerfy-packages-priceplane.active ul { padding-top: 34px; padding-bottom: 15px; }
+.careerfy-packages-priceplane ul {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 24px 33px 9px 33px;
+    text-align: left;
+}
+.careerfy-packages-priceplane ul li {
+    list-style: none;
+    float: left;
+    width: 100%;
+    color: #999999;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.careerfy-packages-priceplane ul li i {
+    float: left;
+    font-size: 12px;
+    margin: 0px 10px 0px 0px;
+}
+.careerfy-packages-priceplane.active .careerfy-packages-priceplane-btn { opacity: 1; }
+.careerfy-packages-priceplane-btn {
+    display: inline-block;
+    padding: 14px 56px;
+    color: #ffffff;
+    font-weight: 500;
+    border-radius: 40px;
+    font-size: 14px;
+    line-height: 1;
+    opacity: 0.50;
+}
+/* Partner Slider */
+.careerfy-partner-slider,
+.careerfy-partner-slider a,
+.careerfy-partner-slider img {
+    float: left;
+    width: 100%;
+}
+.careerfy-partner-slider a {
+    border: 1px solid #e6e6e6;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-partner-slider a:hover {
+    box-shadow: 0px 0px 0px 3px #13b5ea inset;
+}
+.careerfy-partner-slider .slick-list { margin: 0px -15px; }
+.careerfy-partner-slider-layer { padding: 0px 15px; }
+/* Additional PricePlane */
+.careerfy-additional-priceplane {
+    float: left;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    padding-bottom: 35px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.careerfy-additional-priceplane.active h2 { color: #ffffff; }
+.careerfy-additional-priceplane h2 {
+    font-size: 24px;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: -11px;
+    line-height: 1;
+    background-color: #f3f3f3;
+    padding: 34px 0px 55px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+.careerfy-additional-priceplane span {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    font-size: 24px;
+    color: #333333;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.10);
+    font-weight: 600;
+    line-height: 1;
+    margin-top: -26px;
+    margin-bottom: 42px;
+}
+.careerfy-additional-priceplane span strong {
+    font-weight: 400;
+    font-size: 20px;
+    float: left;
+    margin: 2px 1px 0px 0px;
+}
+.careerfy-additional-priceplane span small {
+    font-size: 10px;
+    color: #999999;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.careerfy-additional-priceplane ul {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+.careerfy-additional-priceplane ul li {
+    float: left;
+    width: 100%;
+    list-style: none;
+    color: #999999;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+.careerfy-additional-priceplane.active .careerfy-additional-priceplane-btn { color: #ffffff; }
+.careerfy-additional-priceplane-btn {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 14px 18px 16px 18px;
+    line-height: 1;
+}
+.careerfy-additional-priceplane-btn i {
+    font-size: 16px;
+    margin-left: 4px;
+}
+/* Contact Us */
+#map {
+    float: left;
+    width: 100%;
+    height: 480px;
+}
+.careerfy-contact-info-sec {
+    float: left;
+    width: 33.33333333%;
+    padding: 32px 24px 35px 30px;
+}
+.careerfy-contact-info-sec h2 {
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1;
+    margin-bottom: 14px;
+}
+.careerfy-contact-info-sec p {
+    color: #ffffff;
+    margin-bottom: 26px;
+    letter-spacing: 0px;
+    line-height: 26px;
+}
+.careerfy-contact-info-list {
+    float: left;
+    width: 100%;
+    margin: 0px;
+}
+.careerfy-contact-info-list li {
+    float: left;
+    width: 100%;
+    list-style: none;
+    color: #ffffff;
+    padding-left: 36px;
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 26px;
+    font-weight: 300;
+}
+.careerfy-contact-info-list li i {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    color: #ffffff;
+    font-size: 17px;
+}
+.careerfy-contact-info-list li a { color: #ffffff; }
+.careerfy-contact-media,.careerfy-contact-form,
+.careerfy-contact-form form,.careerfy-contact-form input[type="text"],
+.careerfy-contact-form textarea {
+    float: left;
+    width: 100%;
+}
+.careerfy-contact-media a {
+    float: left;
+    color: #ffffff;
+    font-size: 29px;
+    margin: 0px 18px 10px 0px;
+}
+.careerfy-contact-form {
+    float: left;
+    width: 66.66666667%;
+    background-color: #fcfcfc;
+    padding: 28px 30px 8px 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);}
+.careerfy-contact-form h2 {
+    font-size: 22px;
+    margin-bottom: 27px;
+    line-height: 1;
+}
+.careerfy-contact-form ul { margin: 0px -10px; }
+.careerfy-contact-form ul li {
+    list-style: none;
+    padding: 0px 10px;
+    float: left;
+    width: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.careerfy-contact-form ul li.careerfy-contact-form-full{ width: 100%; }
+.careerfy-contact-form input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    font-size: 12px;
+    color: #999999;
+    padding: 7px 14px;
+    height: 42px;
+}
+.careerfy-contact-form i {
+    position: absolute;
+    right: 29px;
+    top: 12px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+.careerfy-contact-form textarea {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    font-size: 12px;
+    color: #cccccc;
+    padding: 16px 14px;
+    height: 132px;
+}
+.careerfy-contact-form input[type="submit"] {
+    float: left;
+    padding: 17px 23px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 1;
+    border: none;
+}
+/* Contact Service */
+.contact-service ul li {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.contact-service h2 {
+    padding-bottom: 22px;
+    color: #333333;
+    font-weight: 400;
+}
+.contact-service i {
+    font-size: 80px;
+    display: block;
+    padding-bottom: 38px;
+}
+.contact-service a {
+    border-radius: 40px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px 46px 9px 46px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* Footer */
+#careerfy-footer,.careerfy-footer-one,.careerfy-footer-widget,
+.careerfy-footer-logo {
+    float: left;
+    width: 100%;
+}
+.careerfy-footer-one {
+    background-color: #26272b;
+    padding: 58px 0px 0px 0px;
+}
+.careerfy-footer-one p                         { color: #999999; }
+.careerfy-footer-widget .widget                { margin-bottom: 40px; }
+.careerfy-footer-logo                          { margin-bottom: 31px; }
+.widget_contact_info p                          { margin-bottom: 36px; }
+/* Widget Contact Info */
+.careerfy-classic-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+/* Footer Widget Title */
+.footer-widget-title {
+    float: left;
+    width: 100%;
+    margin-bottom: 28px;
+}
+.footer-widget-title h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+/* Widget Nav Manu */
+.widget_nav_manu ul,.widget_nav_manu ul li {
+    float: left;
+    width: 100%;
+}
+.widget_nav_manu ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.widget_nav_manu ul li a {
+    color: #999999;
+    padding-left: 0px;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.widget_nav_manu ul li a:before {
+    content: "\e953";
+    font-family: icomoon;
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 14px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.widget_contact_wrap { padding-right: 20px; }
+/* CopyRight */
+.careerfy-copyright {
+    float: left;
+    width: 100%;
+    border-top: 1px solid #2e2e2e;
+    padding: 40px 0px 30px 0px;
+}
+.careerfy-copyright p {
+    float: left;
+    font-size: 16px;
+    margin: 12px 0px 0px 0px;
+}
+.careerfy-social-network {
+    float: right;
+}
+.careerfy-social-network li {
+    float: left;
+    list-style: none;
+    margin: 0px 0px 10px 10px;
+}
+.careerfy-social-network li a {
+    float: left;
+    width: 41px;
+    height: 41px;
+    background-color: #33353d;
+    color: #818a91;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 16px;
+    padding-top: 13px;
+    -webkit-transition: all 0.4s ease-in-out;
+       -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+         -o-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+.careerfy-social-network li:hover a { color: #ffffff; }
+
+
+
+
+/* Stats List */
+.careerfy-stats-list,
+.careerfy-stats-list-wrap {
+    float: left;
+    width: 100%;
+}
+.careerfy-stats-list ul { margin: 0px -15px; }
+.careerfy-stats-list-wrap {
+    border: 1px solid #dbdbdb;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.12);
+    text-align: center;
+    padding: 24px 10px 28px 10px;
+}
+.careerfy-stats-list-wrap h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #717171;
+    margin-bottom: 11px;
+}
+.careerfy-stats-list-wrap span {
+    display: block;
+    font-size: 24px;
+    color: #717171;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.careerfy-stats-list-wrap small {
+    font-size: 12px;
+    color: #777777;
+}
+.careerfy-stats-list ul li {
+    float: left;
+    width: 25%;
+    list-style: none;
+    line-height: 1;
+    padding: 0px 15px;
+    margin-bottom: 30px;
+}
+.careerfy-stats-list-wrap.green h6,.careerfy-stats-list-wrap.green span { color: #86c157; }
+.careerfy-stats-list-wrap.light-blue h6,.careerfy-stats-list-wrap.light-blue span { color: #a869d6; }
+.careerfy-stats-list-wrap.dark-blue h6,.careerfy-stats-list-wrap.dark-blue span { color: #008dc9; }
+.careerfy-applicants-stats {
+    float: left;
+    width: 170px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 30px;
+}
+.careerfy-applicants-stats-wrap {
+    float: left;
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 16px 8px 9px 8px;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+}
+.careerfy-applicants-stats-wrap i {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #1864c2;
+    border-radius: 100%;
+    color: #1864c2;
+    font-size: 22px;
+    padding-top: 7px;
+    margin-bottom: 6px;
+}
+.careerfy-applicants-stats-wrap span {
+    display: block;
+    font-size: 22px;
+    color: #333333;
+    font-weight: bold;
+}
+.careerfy-applicants-stats-wrap small {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+.careerfy-applicants-stats ul {
+    padding: 21px 19px 16px 19px;
+    float: left;
+    width: 100%;
+}
+.careerfy-applicants-stats ul li {
+    list-style: none;
+    color: #333333;
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.careerfy-applicants-stats ul li i {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    color: #84c15a;
+    font-size: 12px;
+}
+.careerfy-applicants-stats ul li i.light-blue { color: #a869d6; }
+.careerfy-applicants-stats ul li i.dark-blue { color: #008dc9; }
+.careerfy-recent-applicants-nav,
+.careerfy-recent-applicants-nav ul {
+    float: left;
+    width: 100%;
+}
+.careerfy-recent-applicants-nav ul {
+    border: 1px solid #ececec;
+    border-bottom: none;
+    background-color: #f7f7f7;
+}
+.careerfy-recent-applicants-nav ul li {
+    float: left;
+    list-style: none;
+    border-left: 1px solid #eae4e4;
+    padding: 10px 2% 9px 2%;
+    color: #84716a;
+    line-height: 1;
+}
+.careerfy-recent-applicants-nav ul li span { font-size: 17px; }
+.careerfy-recent-applicants-nav ul li small { font-size: 12px; }
+.careerfy-recent-applicants-nav ul li:first-child { border: none; }
+.none-element { display: none; }
+.width-ninetwo { width: 92%; }
+.width-eighty  { width: 80%; }
+
+
+/*-------- new style css -----------------*/
+.header-banner .careerfy-subheader-with-bg{
+    padding-top: 150px;
+}
+
+.inner-menu {
+    background: #121d28;
+    border-top: 1px solid #3a3a3a;
+    overflow: hidden;
+    width: 100%;
+}
+
+.inner-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.inner-menu ul li {
+    float: left;
+}
+.inner-menu ul li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+}
+.inner-menu ul li.active{
+        background: #0267b8;
+}
+
+.registation {
+    box-shadow: 0px 1px 2px rgba(0,0,0, .5);
+    padding: 40px 30px;
+    border-radius: 4px;
+}
+
+.careerfy-user-form-coltwo.careerfy-user-form.registation ul li {
+    width: 100%;
+}
+
+.careerfy-user-form input[type="text"], .careerfy-user-form input[type="password"], .careerfy-user-form input[type="email"]{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.registation-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.registation-top h4 a{
+    color: #0267b8;
+}
+
+
+.post_new_job{
+    width: 100%;
+}
+
+.form-group__half {
+    width: 50%;
+    float: left;
+}
+
+
+.post_new_job .form-group {
+    margin-bottom: 31px;
+    overflow: hidden;
+}
+
+.how_to_aply label span{    position: relative;
+    top: -2px;
+    left: 4px;}
+
+
+.btn-submit{
+    width: 100%;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    background: #0a4f87;
+    color: #fff;
+    transition: .5s;
+}
+
+.btn-submit:hover{
+    background: #165b92;
+    color: #fff;
+}
+
+.post_new_job select {
+    background-color: #ffffff;
+    border-radius: 3px;
+    }
+
+.full-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.carrify-blog-cat {
+    margin-top: 15px;
+}
+
+.carrify-blog-cat li {
+    border-bottom: 1px dotted#ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.carrify-blog-cat li a i {
+    color: #13b5ea;
+    margin-right: 10px;
+}
+
+.blog p{
+    padding: 10px 0px;
+}
+
+.blog .careerfy-job-time {
+    border-top: 1px solid #ececec;
+    padding-top: 5px;
+}
+
+.blog-tag a {
+    border: 1px solid #ddd;
+    padding: 5px 5px;
+    overflow: hidden;
+    display: inline-table;
+    margin: 5px 4px;
+    border-radius: 3px;
+    background: #13b5ea03;
+    transition: .5s;
+}
+
+.blog-tag a:hover{
+    background:#0a4f87;
+    color: #fff;
+}
+
+
+
+.careerfy-user-section li a.dropdown-item{
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #fff;
+    border: 0;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    /* padding: 8px; */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu.dropdown-menu-right {
+    padding: 4px;
+        background: #0a4f87;
+}
+.careerfy-user-section li a.dropdown-item i {
+    position: relative;
+    left: -10px;
+    font-size: 19px;
+}
+
+
+.careerfy-user-form-coltwo.careerfy-user-form ul li span strong {
+    color: red;
+}
+
+.invalid-feedback strong {
+    color: #fb353f;
+}
+
+.comment>a {
+    border: 0px;
+    font-size: 22px;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    border: 0px !important;
+    position: relative;
+}
+
+.comment>a span {
+    position: absolute;
+    top: 0;
+    font-size: 9px;
+    padding: 3px 7px;
+    right: -7px;
+    background: red;
+}
+
+.single-message img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    overflow: hidden;
+    float: left;
+    overflow: hidden;
+}
+
+
+
+.dropdown-menu.dropdown-menu-right.message-wrap {
+    min-width: 240px;
+    right: -282%;
+    padding: 0px;
+}
+
+.single-message-left {
+    display: block;
+    float: left;
+    margin-left: 13px;
+}
+
+.single-wrap {
+    /* overflow: hidden; */
+    max-height: 240px;
+    overflow: auto;
+    background: #13b5ea;
+}
+
+.viewAllMessage{
+    display: block;
+    width: 100%;
+    border: 0px !important;
+    background: black;
+    border-radius: 0px !important; 
+    text-align: center;
+}
+
+.single-message {
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+.single-message-left h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 14px;
+}
+
+.single-message-left p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.single-message-left small {
+    color: #eaeaea;
+    font-size: 11px;
+}
+
+
+.careerfy-job-grid-wrap.allblog figure {
+    padding: 0;
+    max-width: 100%;
+}
